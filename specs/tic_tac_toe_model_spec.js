@@ -10,20 +10,20 @@ describe('TicTacToeModel', function() {
     });
 
     describe('presented with a winning opportunity', function() {
-        it('should recommend completing the line at location 6', function() {
+        it('should recommend completing the line at location 6 for "O--O-----", "O"', function() {
             var model = new Model("O--O-----", "O")
             var result = model.getRecommendation();
-            expect(result.recommendation).equal(6);
+            expect(result.index).equal(6);
         });
         it('should recommend completing the line at location 0', function() {
             var model = new Model("--O-X--OX", "X")
             var result = model.getRecommendation();
-            expect(result.recommendation).equal(0);
+            expect(result.index).equal(0);
         });
         it('should recommend completing the line at location 1', function() {
             var model = new Model("X-X-O--OX", "O")
             var result = model.getRecommendation();
-            expect(result.recommendation).equal(1);
+            expect(result.index).equal(1);
         });
     });
 
@@ -31,10 +31,10 @@ describe('TicTacToeModel', function() {
         it('should recommend a center or a corner', function() {
             var model = new Model("---------", "O")
             var result = model.getRecommendation();
-            expect(result.recommendation).to.not.equal(1);
-            expect(result.recommendation).to.not.equal(3);
-            expect(result.recommendation).to.not.equal(5);
-            expect(result.recommendation).to.not.equal(7);
+            expect(result.index).to.not.equal(1);
+            expect(result.index).to.not.equal(3);
+            expect(result.index).to.not.equal(5);
+            expect(result.index).to.not.equal(7);
         });
     });
 
@@ -42,12 +42,12 @@ describe('TicTacToeModel', function() {
         it('should recommend blocking the line at location 6', function() {
             var model = new Model("O--O-----", "X")
             var result = model.getRecommendation();
-            expect(result.recommendation).equal(6);
+            expect(result.index).equal(6);
         });
         it('should recommend blocking the line at location 0', function() {
             var model = new Model("--O-X--OX", "O")
             var result = model.getRecommendation();
-            expect(result.recommendation).equal(0);
+            expect(result.index).equal(0);
         });
     });
 
@@ -55,8 +55,8 @@ describe('TicTacToeModel', function() {
         it('should recommend forcing a placement over potential lines', function() {
             var model = new Model("--O-X-O--", "X")
             var result = model.getRecommendation();
-            expect(result.recommendation).to.not.equal(0);
-            expect(result.recommendation).to.not.equal(8);
+            expect(result.index).to.not.equal(0);
+            expect(result.index).to.not.equal(8);
         });
     });
 
