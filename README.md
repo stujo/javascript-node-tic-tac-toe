@@ -6,8 +6,8 @@ I'm sure it is, and this is my attempt
 
 
 * There are two ways to play with this code
-  * [Just the Agent](#just_the_agent) (as a node module dependency)
-  * [Using the whole App](#using_the_whole_app)  
+  * [Just the Agent](#just-the-agent) (as a node module dependency)
+  * [Using the whole App](#using-the-whole-app)  
 
 ## Just the Agent
 
