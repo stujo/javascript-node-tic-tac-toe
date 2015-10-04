@@ -1,7 +1,7 @@
 {
     "name": "tictactoe",
     "version": "1.0.0",
-    "description": "Command Line TicTacToe",
+    "description": "TicTacToe Agent",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
