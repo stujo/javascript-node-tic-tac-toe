@@ -9,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/stujo/node-tictactoe.git"
+        "url": "git+https://github.com/stujo/javascript-node-tic-tac-toe.git"
     },
     "author": "stujo",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/stujo/node-tictactoe/issues"
+        "url": "https://github.com/stujo/javascript-node-tic-tac-toe/issues"
     },
-    "homepage": "https://github.com/stujo/node-tictactoe#readme",
+    "homepage": "https://github.com/stujo/javascript-node-tic-tac-toe#readme",
     "dependencies": {
     }
 }
