@@ -4,9 +4,10 @@ Is it possible to create an unbeatable Tic Tac Toe agent which doesn't enumerate
 
 I'm sure it is, and this is my attempt
 
-* There are two ways to play with this code
+* There are three ways to play with this code
   * [Just the Agent](#just-the-agent) (as a node module dependency)
   * [Using the whole App](#using-the-whole-app)  
+  * [Via the deployed API](#via-the-deployed-api)
 
 ## Just the Agent
 
@@ -105,3 +106,9 @@ $ ./tictactoe --------- x debug
 * Recommendation for X is 2 (Score: 3)
 ********************************************************
 ```
+
+# Via the Deployed API
+
+* You can try it here:
+  *  [http://tttapi.herokuapp.com/api/v1/--O-X-O--/X](http://tttapi.herokuapp.com/api/v1/--O-X-O--/X) 
+  *  Source Code : [https://github.com/stujo/tictactoe-api](https://github.com/stujo/tictactoe-api)
