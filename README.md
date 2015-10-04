@@ -28,7 +28,9 @@ var TicTacToe = require('tictactoe-agent');
 
 var model = new TicTacToe.Model('---------', 'X');
 
-console.log(model.boardSummary().recommendation.index);
+var recommendation = model.getRecommendation();
+
+console.log(recommendation.index);
 
 // Will Print out the recommended move
 ```
