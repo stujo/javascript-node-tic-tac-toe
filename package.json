@@ -1,6 +1,6 @@
 {
   "name": "tictactoe-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TicTacToe Agent",
   "main": "index.js",
   "scripts": {
