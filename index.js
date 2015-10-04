@@ -1,6 +1,6 @@
-var TicTacToeModel = require('./tic_tac_toe_model');
+var TicTacToeModel = require('./lib/tic_tac_toe_model');
 
-module.exports =  
+module.exports =  {
   Model: TicTacToeModel
 };
 

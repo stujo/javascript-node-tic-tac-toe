@@ -4,7 +4,6 @@
   "description": "TicTacToe Agent",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "test": "mocha specs --require specs/helpers/chai.js"
   },
   "repository": {

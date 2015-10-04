@@ -4,6 +4,39 @@ Is it possible to create an unbeatable Tic Tac Toe agent which doesn't enumerate
 
 I'm sure it is, and this is my attempt
 
+
+* There are two ways to play with this code
+  * [Just the Agent](#just_the_agent) (as a node module dependency)
+  * [Using the whole App](#using_the_whole_app)  
+
+## Just the Agent
+
+```
+$ mkdir ttt-client
+$ cd ttt-client
+$ npm init 
+# Complete the init
+```
+
+Install the `tictactoe-agent`
+```
+$ npm install tictactoe-agent --save
+```
+
+Add: index.js
+```
+var TicTacToe = require('tictactoe-agent');
+
+var model = new TicTacToe.Model('---------', 'X');
+
+console.log(model.boardSummary().recommendation.index);
+
+// Will Print out the recommended move
+```
+
+## Using the Whole App
+
+
 It's a command line ``node.js`` application which takes the game state and current player 'X' or 'O' as parameters as follows:
 
 ```
