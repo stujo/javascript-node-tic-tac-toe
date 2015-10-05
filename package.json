@@ -1,6 +1,6 @@
 {
   "name": "tictactoe-agent",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "TicTacToe Agent - Suggests a good tictactoe move based on a heuristic",
   "keywords": [
     "tictactoe",
